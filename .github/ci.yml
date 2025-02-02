@@ -1,0 +1,20 @@
+name: GitHub Actions Test
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: 22f2000108@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+      
+      - name: Another Step
+        run: echo "This is another step"
